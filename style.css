@@ -1,0 +1,89 @@
+/* style.css */
+@import url("https://fonts.googleapis.com/css2?family=Figtree:wght@500;800&display=swap");
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Figtree", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: hsl(0, 0%, 100%);
+}
+
+.card {
+  width: calc(100% - 40px); /* mobile width with some padding */
+  max-width: 375px; /* mobile-specific width */
+  margin: auto;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-image {
+  width: 100%;
+  height: auto;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+h1,
+h2 {
+  color: hsl(0, 0%, 7%);
+  margin: 0;
+}
+
+h2 {
+  font-weight: 500;
+}
+
+h1 {
+  font-weight: 800;
+  margin-top: 10px;
+}
+
+.publish-date,
+.author {
+  color: hsl(0, 0%, 50%);
+  font-weight: 500;
+}
+
+.publish-date {
+  margin-top: 10px;
+}
+
+p {
+  color: hsl(0, 0%, 7%);
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Hover and focus states */
+.card:hover,
+.card:focus {
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* Desktop specific styling */
+@media (min-width: 1440px) {
+  .card {
+    max-width: 700px; /* Adjust based on your design preference */
+  }
+}
